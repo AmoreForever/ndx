@@ -1,0 +1,161 @@
+@import "https://fonts.googleapis.com/css2?family=Alata&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100vh
+}
+
+.info {
+    color: #484848
+}
+
+.info img {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 100%
+}
+
+.info p {
+    color: #c8c8c8;
+    font-size: 24px
+}
+
+.socials {
+    position: relative;
+    top: 20px;
+
+    font-weight: bold
+}
+
+.color {
+    background: linear-gradient(90.9deg, #fe934b 58.43%, #f8606f 105.62%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text
+}
+
+.field,
+.field__input,
+.field__label,
+.field__button {
+    color: #c8c8c8;
+    font-size: 16px;
+
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+
+    background-color: #484848;
+    background-clip: padding-box
+}
+
+.field__input:focus {
+    outline: 0
+}
+
+.field__input::placeholder {
+    color: #757575
+}
+
+.field__button {
+    color: white;
+    background-color: #ff8c00;
+    cursor: pointer
+}
+
+.field__button:hover {
+    background-color: #cf7200
+}
+
+.field__button:active {
+    background-color: #be6900
+}
+
+#donate {
+    position: fixed;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65)
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    align-items: center;
+
+    top: 50px;
+    left: 0;
+    right: 0;
+
+    padding: 15px 20px;
+    margin: auto;
+
+    max-width: 200px;
+
+    border: 1px solid #383838;
+    border-radius: 14px;
+
+    background: #121213;
+    color: #c8c8c8;
+    box-shadow: 0 15px 20px rgba(255, 255, 255, 0.2),
+                0 20px 60px rgba(255, 255, 255, 0.3)
+}
+
+
+* {
+    font-family: "Alata", "Roboto";
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    background-color: #121212
+}
+
+ul span {
+    margin: 10px
+}
+
+ul li {
+    display: inline
+}
+
+a {
+    font-family: "Roboto";
+    color: #646464;
+
+    text-decoration: none
+}
+
+a:hover {
+    background: linear-gradient(90.9deg, #fe934b 58.43%, #f8606f 105.62%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text
+}
+
+canvas {
+    position: fixed;
+
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    pointer-events: none
+}
